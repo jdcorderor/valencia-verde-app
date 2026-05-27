@@ -61,8 +61,8 @@ export function LoginForm() {
         </div>
 
         {state?.error && (
-          <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 dark:bg-red-950/30 dark:border-red-800 animate-[scale-in_0.2s_ease-out]">
-            <p className="text-sm text-red-700 dark:text-red-400">{state.error}</p>
+          <div className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 animate-[scale-in_0.2s_ease-out]">
+            <p className="text-sm text-red-700">{state.error}</p>
           </div>
         )}
 

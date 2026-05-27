@@ -15,16 +15,16 @@ const badgeVariants = cva(
           "border-transparent bg-[--color-destructive] text-[--color-destructive-foreground]",
         outline: "text-[--color-foreground]",
         pending:
-          "border-transparent bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400",
+          "border-transparent bg-amber-100 text-amber-800",
         progress:
-          "border-transparent bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400",
-        done: "border-transparent bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400",
+          "border-transparent bg-blue-100 text-blue-800",
+        done: "border-transparent bg-green-100 text-green-800",
         critical:
-          "border-transparent bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-400",
-        high: "border-transparent bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-400",
+          "border-transparent bg-red-100 text-red-800",
+        high: "border-transparent bg-orange-100 text-orange-800",
         medium:
-          "border-transparent bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-400",
-        low: "border-transparent bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-400",
+          "border-transparent bg-yellow-100 text-yellow-800",
+        low: "border-transparent bg-slate-100 text-slate-700",
       },
     },
     defaultVariants: {
