@@ -15,7 +15,7 @@ import { formatDate } from "@/lib/utils";
 
 export const metadata = { title: "Dashboard Admin — Valencia Verde" };
 
-type ReportUser = { first_name: string; last_name: string } | null;
+type ReportUser = { first_name: string; last_name: string };
 
 const statusVariants: Record<string, "pending" | "progress" | "done"> = {
   pending: "pending",
@@ -262,8 +262,8 @@ export default async function AdminDashboardPage() {
                           <p className="truncate">{r.description}</p>
                         </td>
                         <td className="px-5 py-3 text-xs text-[--color-muted-foreground]">
-                          {(r.users as ReportUser)
-                            ? `${(r.users as ReportUser)!.first_name} ${(r.users as ReportUser)!.last_name}`
+                          {Array.isArray(r.users) && r.users[0]
+                            ? `${(r.users[0] as ReportUser).first_name} ${(r.users[0] as ReportUser).last_name}`
                             : "—"}
                         </td>
                       </tr>
